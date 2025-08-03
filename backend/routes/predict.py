@@ -1,7 +1,7 @@
 from flask import Blueprint, request, jsonify
 from joblib import load
 import pandas as pd
-from ..config import Config
+from config import Config
 
 bp = Blueprint('predict', __name__)
 
