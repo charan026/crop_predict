@@ -28,7 +28,7 @@ export default function YieldForm({ setPredictionData }) {
     setLoading(true);
     setError('');
     try {
-      const res = await axios.post("http://127.0.0.1:5000/api/predict_top_crops", formData);
+      const res = await axios.post("https://crop-prediction-jsze.onrender.com", formData);
       setPredictionData({
         predictedYield: res.data.predicted_yield,
         topCrops: res.data.top_crops,
